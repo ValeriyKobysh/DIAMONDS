@@ -1,0 +1,48 @@
+.tabs-filter
+.filter
+    &__control
+        &-list
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            background-color: map-get($color, orange)
+            margin-bottom: 25px
+        &-item
+            &_active .filter__control-btn
+                background-color: map-get($background, blue)
+        &-btn
+            border: none
+            cursor: pointer
+            background-color: transparent
+            +fonts(bold)
+            font-size: rem(18px)
+            color: map-get($color, white)
+            padding: 22px 20px
+            transition: all 0.3s
+    &__content
+        &-list
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            width: 100%
+        &-item
+            border: 1px solid map-get($background, blue)
+            margin-bottom: 60px
+            display: none
+            width: 100%
+            box-sizing: border-box
+            &_active
+                display: flex
+        &-btn
+            border: none
+            cursor: pointer
+            background-color: transparent
+            font-size: rem(12px)
+            +fonts(roman)
+            text-transform: uppercase
+            color: map-get($color, blue)
+            padding: 12px 30px
+            transition: all 0.3s
+            &_active
+                background-color: map-get($background, blue)
+                color: map-get($color, white)

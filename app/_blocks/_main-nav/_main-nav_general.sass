@@ -1,0 +1,27 @@
+.main-nav
+    display: flex
+    flex-direction: column
+    &__list
+        display: flex
+        max-width: 650px
+        justify-content: space-between
+        align-items: center
+    &__item
+        font-size: rem(18px)
+        border-bottom: 5px solid transparent
+        transition: all 0.3s
+    &__link
+        color: map-get($color, blue)
+        +fonts(roman)
+        font-variant: small-caps
+        padding: 5px 0
+        display: block
+    &__menu
+        background-color: transparent
+        border: none
+        display: none
+        cursor: pointer
+        align-self: flex-end
+    &__icon
+        +size(23px 20px)
+        fill: map-get($background, blue)

@@ -1,0 +1,38 @@
+.registration
+    margin: auto
+    background-color: #fff
+    padding: 30px
+    box-sizing: border-box
+    position: relative
+    &__heading
+        text-align: center
+        font-size: rem(24px)
+        color: map-get($color, blue)
+        +fonts(roman)
+        font-variant: small-caps
+        margin-bottom: 20px
+    &__field
+        display: block
+        width: 100%
+        border: 1px solid map-get($background, blue)
+        font-size: rem(18px)
+        color: map-get($background, darkGrey)
+        +fonts(roman)
+        padding: 12.5px 15px
+        box-sizing: border-box
+        margin-bottom: 30px
+    &__submit
+        width: 220px
+        display: block
+        padding: 17.5px 0
+        margin: 0 auto
+        +fonts(bold)
+        font-size: rem(18px)
+        color: map-get($color, white)
+        border: none
+        border-radius: 2px
+        cursor: pointer
+        background-color: map-get($background, blue)
+        transition: all 0.3s
+        &:hover
+            background-color: lighten(map-get($background, blue), 10%)

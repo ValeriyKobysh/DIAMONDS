@@ -1,0 +1,46 @@
+.basket
+    background-color: map-get($color, white)
+    width: 420px
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 3
+    border: 1px solid map-get($background, lightGrey)
+    border-top: none
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35)
+    box-sizing: border-box
+    display: none
+    &__list
+        padding: 10px 15px 0
+    &__item
+        display: flex
+        margin-bottom: 10px
+    &__photo
+        +size(75px 50px)
+        margin-right: 35px
+    &__about
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__heading
+        font-size: rem(15px)
+        color: map-get($color, blue)
+        +fonts(roman)
+        text-transform: uppercase
+        &-count
+            text-transform: lowercase
+    &__wrap-buttons
+        background-color: lighten(map-get($background, lightGrey), 20%)
+        padding: 15px
+    &__button
+        background-color: map-get($background, blue)
+        border: none
+        color: map-get($color, white)
+        +fonts(bold)
+        font-size: rem(15px)
+        width: 165px
+        padding: 7.5px 0
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background-color: lighten(map-get($background, blue), 5%)

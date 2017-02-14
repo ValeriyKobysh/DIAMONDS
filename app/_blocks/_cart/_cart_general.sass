@@ -1,0 +1,21 @@
+.cart
+    display: flex
+    align-items: center
+    &__buttons
+        display: flex
+        flex-direction: column
+    &__button
+        background: none
+        border: none
+        cursor: pointer
+        color: map-get($color, white)
+        font-size: rem(14px)
+        +fonts(roman)
+        font-variant: small-caps
+        text-decoration: underline
+        text-align: right
+        transition: color 0.3s
+        &:hover
+            color: lighten(map-get($color, orange), 15%)
+        &:first-child
+            margin-bottom: 5px

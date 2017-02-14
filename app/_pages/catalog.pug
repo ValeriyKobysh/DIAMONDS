@@ -1,0 +1,13 @@
+extends ../_templates/_main
+block title
+    title Каталог продукции
+block content
+    include ../_blocks/_header-page/_header-page_after_autorization
+    include ../_blocks/_top-panel/_top-panel_after_autorization
+    include ../_blocks/_section-head/_section-head
+    include ../_blocks/_section-catalog/_section-catalog
+block append popups
+    include ../_blocks/_popup/_popup_no_register
+    include ../_blocks/_popup/_popup_form_payment
+    include ../_blocks/_popup/_popup_true-trans
+    include ../_blocks/_popup/_popup_false-trans

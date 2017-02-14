@@ -1,0 +1,96 @@
+.form-payment
+    padding: 30px 0 0
+    &__control
+        &-list
+            display: flex
+            justify-content: space-between
+            padding-bottom: 20px
+            margin: 0 20px
+        &-item
+            height: 120px
+            &_active .form-payment__control-icon, &:hover .form-payment__control-icon
+                fill: map-get($color, orange)
+        &-btn
+            background-color: transparent
+            border: none
+            cursor: pointer
+            height: 100%
+        &-icon
+            height: 100%
+            fill: map-get($background, lightGrey)
+            transition: all 0.3s
+        &-text
+            +fonts(bold)
+            font-size: rem(17px)
+    &__content
+        &-list
+            margin: 0 20px
+        &-item
+            border-top: 1px solid map-get($color, blue)
+            padding-top: 35px
+            text-align: center
+            display: none
+            &_active
+                display: block
+    &__text
+        font-size: rem(14px)
+        +fonts(roman)
+        color: map-get($background, darkGrey)
+        text-align: center
+        &_bold
+            +fonts(bold)
+        &_blue
+            color: map-get($color, blue)
+    &__timer
+        display: none
+        padding: 0 0 25px
+        margin: 0 20px
+        &_show
+            display: block
+        &-time
+            font-size: rem(24px)
+            +fonts(bold)
+            color: map-get($color, blue)
+            text-align: center
+    &__button
+        display: none
+        text-align: center
+        margin-bottom: 20px
+        &_show
+            display: block
+    &__inspection
+        background-color: lighten(map-get($background, lightGrey), 25%)
+        padding: 20px 0
+        flex-direction: column
+        display: none
+        &_show
+            display: flex
+        &-text
+            color: map-get($color, orange)
+            +fonts(bold)
+            text-align: center
+            display: block
+            margin: 0 20px
+            font-size: rem(14px)
+            margin-bottom: 15px
+        &-input
+            display: block
+            border-radius: 3px
+            border: 1px solid map-get($background, lightGrey)
+            box-sizing: border-box
+            padding: 14px 0
+            text-align: center
+            width: 205px
+            margin: 0 auto
+            margin-bottom: 15px
+        &-button
+            text-transform: uppercase
+            +fonts(bold)
+            color: map-get($color, white)
+            font-size: rem(18px)
+            background-color: map-get($color, orange)
+            border: none
+            border-radius: 3px
+            cursor: pointer
+            padding: 12.5px 24px
+            margin: 0 auto

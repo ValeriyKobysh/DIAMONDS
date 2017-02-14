@@ -1,0 +1,21 @@
+.true-trans
+    padding: 55px 0
+    &__heading
+        +fonts(bold)
+        font-size: rem(30px)
+        color: map-get($color, orange)
+        text-align: center
+        margin-bottom: 30px
+    &__text
+        color: map-get($color, blue)
+        font-size: rem(18px)
+        text-align: center
+.false-trans
+    @extend .true-trans
+    &__heading
+        @extend .true-trans__heading
+        &-icon
+            fill: map-get($color, orange)
+            height: 100px
+    &__text
+        @extend .true-trans__text

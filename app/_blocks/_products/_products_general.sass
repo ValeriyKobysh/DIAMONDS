@@ -1,0 +1,59 @@
+.products
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__item
+        width: 263px
+        box-sizing: border-box
+        border: 1px solid map-get($background, lightGrey)
+        margin-bottom: 60px
+        padding: 23px 23px 13px 23px
+        display: flex
+        flex-direction: column
+        transition:  0.3s
+        &:hover
+            border: 1px solid map-get($background, blue)
+    &__heading, &__description, &__price, &__count
+        color: map-get($color, blue)
+        text-align: center
+    &__heading
+        +fonts(bold)
+        text-transform: uppercase
+        font-size: rem(20px)
+        margin-bottom: 15px
+    &__description
+        font-size: rem(20px)
+        margin-bottom: 20px
+        +fonts(roman)
+    &__image
+        margin-bottom: 15px
+        +size(215px 150px)
+    &__price
+        font-size: rem(14px)
+        +fonts(roman)
+        margin-bottom: 37px
+    &__count
+        +fonts(roman)
+        font-size: rem(16px)
+        margin-bottom: 8px
+    &__link
+        text-align: center
+        margin: 0 auto
+        padding: 17px 0
+        margin-bottom: 10px
+        width: 150px
+        +fonts(bold)
+        font-size: rem(16px)
+        background-color: map-get($color, orange)
+        color: map-get($color, white)
+        border-radius: 3px
+        border: none
+        transition: background-color 0.3s
+        cursor: pointer
+        &:hover
+            background-color: lighten(map-get($color, orange), 7%)
+        &_blue
+            background-color: map-get($color, blue)
+            &:hover
+                background-color: lighten(map-get($color, blue), 7%)

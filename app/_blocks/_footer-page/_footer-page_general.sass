@@ -1,0 +1,15 @@
+.footer-page
+    background-color: map-get($background, blue)
+    padding: 10px 0
+    color: map-get($color, white)
+    min-width: map-get($container, mobile)
+    &__copyright, &__text
+        +fonts(roman)
+    &__copyright
+        font-size: rem(18px)
+        min-width: 165px
+    &__text
+        font-size: rem(14px)
+        line-height: rem(18px)
+        flex-shrink: 4
+        max-width: 360px

@@ -1,0 +1,19 @@
+.container
+    max-width: map-get($container, large-desktop)
+    min-width: map-get($container, mobile)
+    margin: auto
+    padding: 0 15px
+    display: flex
+    position: relative
+    box-sizing: border-box
+    &_between
+        justify-content: space-between
+        align-items: center
+    &_anly-betw
+        justify-content: space-between
+    &_column
+        flex-direction: column
+        justify-content: center
+        height: 100%
+    &_wrap
+        flex-wrap: wrap

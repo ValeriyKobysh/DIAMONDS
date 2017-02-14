@@ -1,0 +1,44 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss"
+
+@import "_variables.scss"
+@import "_fonts.sass"
+
+*
+    margin: 0
+    padding: 0
+    outline: none
+
+.list
+    list-style-type: none
+.link
+    text-decoration: none
+    &_color
+        color: map-get($color, green)
+.btn
+
+
+html, body
+    height: 100%
+    +fonts(roman)
+    font-size: $em-base
+    min-height: 100%
+body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+@keyframes anim-show-popup
+    100%
+        opacity: 1
+        transform:  scaleX(1.00) scaleY(1.00)
+        z-index: -1000
+    50%
+        opacity: 1
+        transform:  scaleX(0.95) scaleY(0.95)
+    25%
+        opacity: 1
+        transform:  scaleX(1.10) scaleY(1.10)
+    0%
+        opacity: 0
+        transform:  scaleX(0.30) scaleY(0.30)
+        z-index: 1000

@@ -1,0 +1,88 @@
+@import "_default_settings.sass";
+// General Styles
+@import "../_blocks/_container/_container_general.sass";
+@import "../_blocks/_header-page/_header-page_general.sass";
+@import "../_blocks/_logo/_logo_general.sass";
+@import "../_blocks/_cart/_cart_general.sass";
+@import "../_blocks/_balans/_balans_general.sass";
+@import "../_blocks/_top-panel/_top-panel_general.sass";
+// @import "../_blocks/_basket/_basket_general.sass";
+@import "../_blocks/_main-nav/_main-nav_general.sass";
+@import "../_blocks/_section-head/_section-head_general.sass";
+@import "../_blocks/_registration/_registration_general.sass";
+@import "../_blocks/_enter/_enter_general.sass";
+@import "../_blocks/_section-products/_section-products_general.sass";
+@import "../_blocks/_products/_products_general.sass";
+@import "../_blocks/_tabs-filter/_tabs-filter_general.sass";
+@import "../_blocks/_stepstobuy/_stepstobuy_general.sass";
+@import "../_blocks/_our-contacts/_our-contacts_general.sass";
+@import "../_blocks/_consultation/_consultation_general.sass";
+@import "../_blocks/_footer-page/_footer-page_general.sass";
+@import "../_blocks/_footer-menu/_footer-menu_general.sass";
+@import "../_blocks/_footer-contacts/_footer-contacts_general.sass";
+@import "../_blocks/_popup/_popup_general.sass";
+@import "../_blocks/_close/_close_general.sass";
+@import "../_blocks/_sign/_sign_general.sass";
+@import "../_blocks/_section/_section_general.sass";
+@import "../_blocks/_breadcrumps/_breadcrumps_general.sass";
+@import "../_blocks/_section-text/_section-text_general.sass";
+@import "../_blocks/_section-product/_section-product_general.sass";
+@import "../_blocks/_int-product/_int-product_general.sass";
+@import "../_blocks/_method/_method_general.sass";
+@import "../_blocks/_product-contact/_product-contact_general.sass";
+@import "../_blocks/_no-reg/_no-reg_general.sass";
+@import "../_blocks/_form-payment/_form-payment_general.sass";
+@import "../_blocks/_true-false-trans/_true-false-trans_general.sass";
+
+//Desktop device styles
+@media (min-width: map-get($breakpoints, desktop)) and (max-width: map-get($breakpoints, large-desktop)){
+    @import "../_blocks/_container/_container_desktop.sass";
+    @import '../_blocks/_footer-page/_footer-page_desktop.sass';
+    @import "../_blocks/_section-product/_section-product_desktop.sass";
+}
+
+@media (min-width: map-get($breakpoints, desktop)){
+    @import "../_blocks/_main-nav/_main-nav_desktop.sass";
+}
+//Only tablet device styles
+@media (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)){
+    @import "../_blocks/_container/_container_tablet.sass";
+    @import "../_blocks/_main-nav/_main-nav_tablet.sass";
+    @import "../_blocks/_section-products/_section-products_tablet.sass";
+    @import "../_blocks/_section-head/_section-head_tablet.sass";
+    @import "../_blocks/_section-text/_section-text_tablet.sass";
+}
+
+//Tablet device style
+@media (max-width: map-get($breakpoints, desktop)){
+    @import "../_blocks/_tabs-filter/_tabs-filter_tablet.sass";
+    @import "../_blocks/_consultation/_consultation_tablet.sass";
+    @import '../_blocks/_footer-page/_footer-page_tablet.sass';
+    @import "../_blocks/_section-product/_section-product_tablet.sass";
+    @import "../_blocks/_method/_method_tablet.sass";
+    @import "../_blocks/_product-contact/_product-contact_tablet.sass";
+    @import "../_blocks/_int-product/_int-product_tablet.sass";
+}
+
+@media (max-width: map-get($breakpoints, tablet)){
+    @import "../_blocks/_container/_container_mobile.sass";
+    @import "../_blocks/_main-nav/_main-nav_mobile.sass";
+    @import "../_blocks/_tabs-filter/_tabs-filter_mobile.sass";
+    // @import "../_blocks/_basket/_basket_mobile.sass";
+    @import "../_blocks/_section-head/_section-head_mobile.sass";
+    @import "../_blocks/_section-products/_section-products_mobile.sass";
+    @import "../_blocks/_stepstobuy/_stepstobuy_mobile.sass";
+    @import "../_blocks/_our-contacts/_our-contacts_mobile.scss";
+    @import '../_blocks/_footer-page/_footer-page_mobile.sass';
+    @import "../_blocks/_registration/_registration_mobile.sass";
+    @import "../_blocks/_popup/_popup_mobile.sass";
+    @import "../_blocks/_cart/_cart_mobile.sass";
+    @import "../_blocks/_balans/_balans_mobile.sass";
+    @import "../_blocks/_section/_section_mobile.sass";
+    @import "../_blocks/_breadcrumps/_breadcrumps_mobile.sass";
+    @import "../_blocks/_section-text/_section-text_mobile.sass";
+    @import "../_blocks/_enter/_enter_mobile.sass";
+    @import "../_blocks/_no-reg/_no-reg_mobile.sass";
+    @import "../_blocks/_form-payment/_form-payment_mobile.sass";
+    @import "../_blocks/_section-product/_section-product_mobile.sass";
+}

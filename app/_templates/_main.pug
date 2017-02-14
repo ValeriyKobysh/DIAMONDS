@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        // Favicon
+        link(rel="apple-touch-icon", sizes="180x180", href="img/favicon/apple-touch-icon.png")
+        link(rel="icon", type="img/favicon/favicon-32x32.png", href="img/favicon/favicon-32x32.png", sizes="32x32")
+        link(rel="icon", type="img/favicon/favicon-16x16.png", href="img/favicon/favicon-16x16.png", sizes="16x16")
+        link(rel="manifest", href="img/favicon/manifest.json")
+        link(rel="mask-icon", href="img/favicon/safari-pinned-tab.svg", color="#5bbad5")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="theme-color", content="#ffffff")
+        // End favicon
+        block title
+        block css
+        link(rel="stylesheet", href="css/index.css")
+    body
+        // [if LT IE 10]> <p class="browsehappy">Вы используете устаревший браузер. Пожалуйста <a class="">обновите</a>его</p><![endif]
+        .wrapper-page
+            block content
+        include ../_blocks/_footer-page/_footer-page
+        block popups
+            include ../_blocks/_popup/_popup_registration
+            include ../_blocks/_popup/_popup_enter
+        block js
+            script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+            script(src="js/main.js")

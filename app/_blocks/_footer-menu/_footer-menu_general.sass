@@ -1,0 +1,14 @@
+.footer-menu
+    &__heading
+        +fonts(bold)
+        font-size: rem(24px)
+        line-height: rem(24px)
+        margin-bottom: 20px
+    &__link
+        color: map-get($color, white)
+        font-size: rem(14px)
+        line-height: rem(24px)
+        transition: all 0.3s
+        &:hover
+            color: darken(map-get($color, white), 20%)
+            text-decoration: underline

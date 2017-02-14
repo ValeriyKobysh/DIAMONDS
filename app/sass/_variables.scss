@@ -1,0 +1,37 @@
+$background: (
+    blue: #1e4592,
+    darkGrey: #3d3a41,
+    lightGrey: #a7a7a7
+);
+$color: (
+    white: #fff,
+    orange: #f8a537,
+    blue: #1e4592,
+    success: #5cb85c,
+    focus: #286090,
+    danger: #c9302c
+);
+$container:(
+    large-desktop: 1170px,
+    desktop: 970px,
+    tablet: 750px,
+    mobile: 360px
+);
+$breakpoints: (
+    large-desktop: 1200px,
+    desktop: 992px,
+    tablet: 768px,
+    mobile: 360px
+);
+
+@mixin fonts($font){
+    @if $font == 'roman'{
+        font-family: HelveticaNeueCyr-Roman, sans-serif; 
+    }
+    @if $font == 'medium'{
+        font-family: HelveticaNeueCyr-Mediun, sans-serif; 
+    }
+    @if $font == 'bold'{
+        font-family: HelveticaNeueCyr-Bold, sans-serif; 
+    }
+}

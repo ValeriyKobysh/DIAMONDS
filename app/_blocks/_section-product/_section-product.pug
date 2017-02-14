@@ -1,0 +1,37 @@
+section.section-product
+    .container.container_column
+        include ../_breadcrumps/_breadcrumps
+        h1.section__heading Найменование товара
+        include ../_tabs-filter/_tabs-filter
+        .section-product__wrap
+            .section-product__photo
+                .section-product__photo-mwrap
+                    img.section-product__photo-main(src="http://placehold.it/555x380/2f2f2f", alt="")
+                ul.section-product__photo-list.list
+                    li.section-product__photo-item
+                        button.section-product__photo-btn
+                            img.section-product__photo-img(src="http://placehold.it/555x380/2f2f2f", alt="")
+                    li.section-product__photo-item
+                        button.section-product__photo-btn
+                            img.section-product__photo-img(src="http://placehold.it/555x380/2f2f23", alt="")
+                    li.section-product__photo-item
+                        button.section-product__photo-btn
+                            img.section-product__photo-img(src="http://placehold.it/555x380/2f202f", alt="")
+            .section-product__info
+                .section-product__info-prod
+                    h3.section-product__heading Бриллиант 0.5 Карат
+                    p.section-product__id Код товара:124525-854 GP
+                    .section-product__price
+                        p.section-product__price-text Цена:&nbsp;
+                            span.section-product__price-bold 12353&nbsp;
+                            span.section-product__price-cur руб.
+                        button.section-product__price-btn Купить сейчас
+                    p.section-product__count В наличии: 0
+                .section-product__info-method.method
+                    include ../_method/_method
+                .section-product__info-contact.product-contact
+                    include ../_product-contact/_product-contact
+        .section-product__about
+            h4.section-product__about-heading Описание
+            p.section-product__about-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta inventore, dolore officiis quae deserunt in assumenda harum, temporibus praesentium vel, provident enim a atque. Atque accusantium animi perferendis beatae.150
+        include ../_int-product/_int-product

@@ -1,0 +1,54 @@
+.consultation
+    background-color: lighten(map-get($background, lightGrey), 30%)
+    padding: 29px 0
+    min-width: map-get($container, mobile)
+    &__heading, &__description
+        font-variant: small-caps
+    &__heading
+        +fonts(bold)
+        font-size: rem(30px)
+        color: map-get($color, orange)
+        margin-bottom: 25px
+    &__description
+        +fonts(roman)
+        color: lighten(map-get($background, darkGrey), 11.5%)
+        font-size: rem(24px)
+        line-height: rem(30px)
+        margin-bottom: 30px
+    &__form
+        max-width: 780px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__field, &__submit
+        width: 380px
+        box-sizing: border-box
+        border-radius: 3px
+        border: 1px solid transparent
+        +fonts(roman)
+        font-variant: small-caps
+        font-size: rem(24px)
+    &__field
+        padding: 17px 15px
+        margin-bottom: 20px
+        color: map-get($color, blue)
+        transition: all 0.3s
+        &:focus
+            outline: map-get($color, focus) 2px solid
+        &::-webkit-input-placeholder
+            opacity: 1
+        &::-moz-placeholder
+            opacity: 1
+        &:-moz-placeholder
+            opacity: 1
+        &:-ms-input-placeholder
+            opacity: 1
+    &__submit
+        background-color: map-get($color, orange)
+        height: 64px
+        text-transform: uppercase
+        color: map-get($color, white)
+        cursor: pointer
+        transition: background-color 0.3s
+        &:hover
+            background-color: lighten(map-get($color, orange), 7%)

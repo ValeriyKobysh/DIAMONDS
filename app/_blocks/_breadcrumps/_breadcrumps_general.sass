@@ -1,0 +1,24 @@
+.breadcrumps
+    // border-bottom: 1px solid map-get($color, blue)
+    box-sizing: border-box
+    padding: 17.5px 0
+    &__list
+        display: flex
+        flex-wrap: wrap
+    &__item
+        &:after
+            content: "/"
+            color: map-get($background, lightGrey)
+            margin: 0 5px
+        &:last-child:after
+            display: none
+        &:last-child .breadcrumps__link
+            color: map-get($color, blue)
+    &__link
+        color: map-get($background, lightGrey)
+        +fonts(roman)
+        font-size: rem(18px)
+        transition: color 0.3s
+        &:hover
+            color: map-get($color, blue)
+            text-decoration: underline

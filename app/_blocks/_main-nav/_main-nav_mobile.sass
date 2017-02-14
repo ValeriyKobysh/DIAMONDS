@@ -1,0 +1,16 @@
+.main-nav
+    &__list
+        flex-direction: column
+        max-width: 100%
+        display: none
+    &__item
+        width: 100%
+        padding: 0 20px
+        border-top: 1px solid map-get($background, lightGrey)
+        box-sizing: border-box
+        &_active
+            background-color: map-get($color, orange)
+            .main-nav__link
+                color: map-get($color, white)
+    &__menu
+        display: block

@@ -1,0 +1,7 @@
+- var items = ['О банке', 'Акции и предложения', 'Условия пользования ', 'Гарантия']
+
+h4.footer-menu__heading Меню
+ul.footer-menu__list.list 
+    each item in items
+        li.footer-menu__item
+            a.footer-menu__link.link(href="javascript:void(0);")= item
