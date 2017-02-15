@@ -1,0 +1,30 @@
+.section-contacts
+    &__list
+        display: flex
+        padding: 0 0 20px 0
+    &__item
+        flex-basis: 50%
+        text-align: center
+        height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &_light
+            background-color: lighten(map-get($background, lightGrey), 15%)
+        &_dark
+            background-color: rgba(map-get($background, blue), 0.75)
+    &__title
+        +fonts(bold)
+        font-size: rem(36px)
+        margin-bottom: 30px
+        &_dark
+            color: map-get($color, blue)
+        &_light
+            color: map-get($color, white)
+    &__value
+        font-size: rem(18px)
+        &_dark
+            @extend .section-contacts__title_dark
+        &_light
+            @extend .section-contacts__title_light

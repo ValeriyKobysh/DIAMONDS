@@ -2,13 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\js",
-    "\\app\\sass",
     "\\app\\_blocks",
-    "\\app\\_blocks\\_popup",
-    "\\app\\_pages",
-    "\\app\\_templates"
+    "\\app\\_blocks\\_section-purchase"
   ],
-  "SelectedNode": "\\app\\_pages\\index.pug",
+  "SelectedNode": "\\app\\_blocks\\_section-purchase\\_section-purchase_tablet.scss",
   "PreviewInSolutionExplorer": false
 }

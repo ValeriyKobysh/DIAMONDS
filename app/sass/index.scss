@@ -33,6 +33,11 @@
 @import "../_blocks/_no-reg/_no-reg_general.sass";
 @import "../_blocks/_form-payment/_form-payment_general.sass";
 @import "../_blocks/_true-false-trans/_true-false-trans_general.sass";
+@import '../_blocks/_section-purchase/_section-purchase_general.scss';
+@import "../_blocks/_section-sample/_section-sample_general.sass";
+@import "../_blocks/_section-responses/_section-responses_general.sass";
+@import "../_blocks/_must-reg/_must-reg_general.sass";
+@import "../_blocks/_section-contacts/_section-contacts_general.sass";
 
 //Desktop device styles
 @media (min-width: map-get($breakpoints, desktop)) and (max-width: map-get($breakpoints, large-desktop)){
@@ -62,6 +67,7 @@
     @import "../_blocks/_method/_method_tablet.sass";
     @import "../_blocks/_product-contact/_product-contact_tablet.sass";
     @import "../_blocks/_int-product/_int-product_tablet.sass";
+    @import '../_blocks/_section-purchase/_section-purchase_tablet.sass';
 }
 
 @media (max-width: map-get($breakpoints, tablet)){
@@ -85,4 +91,7 @@
     @import "../_blocks/_no-reg/_no-reg_mobile.sass";
     @import "../_blocks/_form-payment/_form-payment_mobile.sass";
     @import "../_blocks/_section-product/_section-product_mobile.sass";
+    @import "../_blocks/_section-sample/_section-sample_mobile.sass";
+    @import "../_blocks/_section-responses/_section-responses_mobile.sass";
+    @import "../_blocks/_section-contacts/_section-contacts_mobile.sass";
 }

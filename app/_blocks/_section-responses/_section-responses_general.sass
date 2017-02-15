@@ -1,0 +1,76 @@
+.section-responses
+    margin-bottom: 35px
+    &__list
+        padding: 20px 0
+    &__item
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+        &-head
+            display: flex
+            justify-content: space-between
+            align-items: center
+            background-color: lighten(map-get($background, darkGrey), 21.7%)
+            padding: 10px
+            border-top-left-radius: 3px
+            border-top-right-radius: 3px
+        &-date, &-name
+            color: map-get($color, white)
+        &-name
+            +fonts(bold)
+            font-size: rem(18px)
+        &-date
+            font-size: rem(14px)
+        &-respons
+            background-color: lighten(map-get($background, lightGrey), 20%)
+            display: flex
+            align-items: center
+            padding: 10px
+            border-bottom-left-radius: 3px
+            border-bottom-right-radius: 3px
+        &-img
+            height: 85px
+            flex: 0 0 85px
+            border-radius: 50%
+            background-color: map-get($background, blue)
+            display: flex
+            justify-content: center
+            align-items: center
+        &-icon
+            width: 50%
+            fill: map-get($color, white)
+        &-text
+            padding: 0 0 0 10px
+            flex: 1 1 auto
+            font-size: rem(12px)
+    &__line
+        height: 2px
+        background-color: map-get($background, blue)
+        border: none
+        margin-bottom: 35px
+    &__link
+        +fonts(bold)
+        color: map-get($color, white)
+        text-align: center
+        font-size: rem(18px)
+        background-color: map-get($color, orange)
+        width: 220px
+        padding: 12.5px 0
+        border-radius: 3px
+        transition: all 0.3s
+        &:hover
+    &__lbl
+        color: darken(map-get($background, lightGrey), 10%)
+        margin-bottom: 5px
+        padding-left: 5px
+    &__msg
+        width: 50%
+        height: 220px
+        box-sizing: border-box
+        border-radius: 3px
+        border: 1px solid map-get($background, blue)
+        resize: none
+        margin-bottom: 25px
+        +fonts(roman)
+        font-size: rem(16px)
+        padding: 20px

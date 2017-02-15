@@ -1,0 +1,43 @@
+.section-sample
+    padding: 0 0 20px 0
+    &__form
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        padding: 30px 0 30px
+    &__label
+        margin-right: 25px
+        font-size: rem(18px)
+        color: map-get($background, garkGrey)
+    &__input
+        flex: 0 1 225px
+        border: 1px solid map-get($background, blue)
+        border-radius: 3px
+        font-size: rem(18px)
+        padding: 8.5px 10px
+        box-sizing: border-box
+    &__button
+        +fonts(bold)
+        font-size: rem(18px)
+        color: map-get($color, white)
+        background-color: map-get($color, orange)
+        border: none
+        border-radius: 3px
+        width: 182px
+        margin: 0 auto 45px
+        padding: 12px 0
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background-color: rgba(map-get($color, orange),.8)
+    &__forum
+        background-color: lighten(map-get($background, lightGrey), 20%)
+        text-align: center
+        padding: 20px 0
+        &-link
+            color: map-get($color, blue)
+            font-size: rem(18px)
+            +fonts(bold)
+            &:hover
+                text-decoration: underline

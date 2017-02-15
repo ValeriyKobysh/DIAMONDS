@@ -1,0 +1,12 @@
+extends ../_templates/_main
+block title
+    title Отзывы
+block content
+    include ../_blocks/_header-page/_header-page
+    include ../_blocks/_top-panel/_top-panel
+    include ../_blocks/_section-head/_section-head
+    include ../_blocks/_section-responses/_section-responses
+block append popups
+    include ../_blocks/_popup/_popup_must-reg
+block append js
+    script(src="js/responses.js")

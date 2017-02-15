@@ -1,0 +1,33 @@
+.section-purchase
+    &__list
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+    &__item
+        flex-direction: column
+        width: 245px
+        padding: 0 0 35px 0
+        border: 1px solid map-get($background, garkGrey)
+        top: -1px
+        margin-bottom: 20px
+        &:first-child
+            display: none
+        &-photo
+            +size(245px 167px)
+        &-wrap, &-price, &-info
+            flex-basis: auto
+            width: 245px
+        &-price
+            text-align: right
+            padding-top: 25px
+        &-count, &-date
+            font-size: rem(14px)
+        &-counth, &-dateh
+            display: block
+            color: map-get($color, blue)
+            +fonts(roman)
+            line-height: rem(20px)
+.fg-4
+    padding: 20px
+.fg-3
+    flex-basis: auto
